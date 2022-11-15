@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scripts/jwifi.js"></script>
+    <script src="scripts/indexScripts.js"></script>
+    <style>
+        div {
+            display: block;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div>
+            <label for="txtDtNas">Data de nascimento:</label>
+            <input type="text" id="txtDtNas" value="10/10/2010">
+            <input type="button" value="Validar" onclick="validaDtNas()">
+        </div>
+
+
+        <div>
+            <label for="txtCpf">CPF:</label>
+            <input type="text" id="txtCpf" value="123.456.789-10"
+                onkeypress="inserirMascara('txtCpf','999.999.999-99')">
+            <input type="button" value="Validar" onclick="validaCpf()">
+        </div>
+
+        <div>
+            <label for="txtMat">Matrícula:</label>
+            <input type="text" id="txtMat" value="IFTM-123/456-A6">
+            <input type="button" value="Validar" onclick="validaMat()">
+        </div>
+
+        <div>
+            <label for="txtCdgIF">Código da disciplina do IFTM:</label>
+            <input type="text" id="txtCdgIF" value="MT-12.345-IFTM"
+                onkeypress="inserirMascara('txtCdgIF','MT-99.999-IFTM')">
+            <input type="button" value="Validar" onclick="validaCdgIF()">
+        </div>
+
+        <div>
+            <label for="txtCdgIFII">Código da disciplina do IFTM (versão 2):</label>
+            <input type="text" id="txtCdgIFII" value="MT-12.345-IFTM"
+                onkeypress="inserirMascara('txtCdgIFII','MT-99.999-IFTM')">
+            <input type="button" value="Validar" onclick="validaCdgIFII()">
+        </div>
+
+        <div>
+            <label for="txtCdgIFIII">Código da disciplina do IFTM (versão 3):</label>
+            <input type="text" id="txtCdgIFIII" value="MT-12.345-IFTM">
+            <input type="button" value="Validar" onclick="validaCdgIFIII()">
+        </div>
+
+        <div>
+            <label for="txtCdgIFIV">Código da disciplina do IFTM (versão 4):</label>
+            <input type="text" id="txtCdgIFIV" value="MT-12.345-IFTM Uberlândia Centro">
+            <input type="button" value="Validar" onclick="validaCdgIFIV()">
+        </div>
+
+        <div>
+            <label for="txtNomeCampus">Nome de campus do IFTM:</label>
+            <input type="text" id="txtNomeCampus" value="IFTM campus Uberlândia Centro">
+            <input type="button" value="Validar" onclick="validaNomeCampus()">
+        </div>
+
+        <div>
+            <label for="txtTelefone">Telefone:</label>
+            <input type="text" id="txtTelefone" value="+55(34)12345-1234"
+                onkeypress="inserirMascara('txtTelefone','+55(34)12345-1234')">
+            <input type="button" value="Validar" onclick="validaTelefone()">
+        </div>
+
+        <div>
+            <label for="txtTelefone2">Telefone (versão 2):</label>
+            <input type="text" id="txtTelefone2" value="(034)12345-1234">
+            <input type="button" value="Validar" onclick="validaTelefone2()">
+        </div>
+
+        <div>
+            <label for="txtAltura">Altura de uma pessoa:</label>
+            <input type="text" id="txtAltura" value="1.75">
+            <input type="button" value="Validar" onclick="validaAltura()">
+        </div>
+
+        <div>
+            <label for="txtFaturamento">Faturamento anual de uma empresa:</label>
+            <input type="text" id="txtFaturamento" value="R$0,00">
+            <input type="button" value="Validar" onclick="validaFaturamento()">
+        </div>
+
+        <div>
+            <label for="txtCron">Cronômetro:</label>
+            <input type="text" id="txtCron" value="00:00:00:00" onkeypress="inserirMascara('txtCron','00:00:00:00')">
+            <input type="button" value="Validar" onclick="validaCron()">
+        </div>
+
+        <div>
+            <label for="txtSenha">Senha:</label>
+            <input type="text" id="txtSenha" value="321a.&apMb.aei.Ab0-asf+_,/*.cq">
+            <input type="button" value="Validar" onclick="validaSenha()">
+        </div>
+
+    </form>
+</body>
+
+</html>
